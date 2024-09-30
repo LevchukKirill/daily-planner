@@ -1,13 +1,14 @@
-import Image from "next/image";
+import React from "react";
+import { inspect } from "util";
 import styles from "./page.module.css";
-import SideNav from "@/components/sideNav/SideNav";
+import DragContainer from "@/components/drag/DragContainer";
 
-export default function Home() {
+export default function Dash() {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
         <main className={styles.main}>
-          <div className={styles.ctas}>dasdasdadas</div>
+          <DragContainer />
         </main>
       </div>
     </div>

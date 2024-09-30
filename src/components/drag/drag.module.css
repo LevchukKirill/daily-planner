@@ -1,0 +1,15 @@
+.container {
+    margin: 8px;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 10px;
+}
+.title { padding: 8px }
+.taskList { padding: 8px }
+
+.task {
+    border: 1px solid lightgoldenrodyellow;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    /*background-color: white;*/
+}

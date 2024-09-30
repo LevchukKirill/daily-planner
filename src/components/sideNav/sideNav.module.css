@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 32px;
+    /*grid-row-start: 2;*/
+    top: 1vh;
+    left: 1vw;
+    /*border-width: 1px;*/
+    /*border-color: white;*/
+    /*border-style: solid;*/
+}
+
+.nav ul {
+    font-family: var(--font-geist-mono);
+    padding-left: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    list-style-position: inside;
+}
+
+.main li:not(:last-of-type) {
+
+    margin-bottom: 8px;
+}
