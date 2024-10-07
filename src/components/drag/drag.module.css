@@ -1,15 +1,93 @@
 .container {
-    margin: 8px;
-    border: 1px solid lightgoldenrodyellow;
-    border-radius: 10px;
+  display: flex;
+  /*flex-grow: 1;*/
+  width: 100%;
+
+  flex-direction: column;
+  margin: 8px;
+  border: 1px solid lightgoldenrodyellow;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.title { padding: 8px }
-.taskList { padding: 8px }
+.title {
+  padding: 8px;
+  user-select: none;
+}
+.taskList {
+  padding: 8px;
+  height: 100%;
+}
+
+.handle {
+  /*display: flex;*/
+  /*flex-grow: 0;*/
+  min-width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: lightgreen;
+  margin-right: 8px;
+}
+
+.addButton {
+  border: 1px solid lightgoldenrodyellow;
+  padding: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  /*margin-bottom: 8px;*/
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 14pt;
+  font-weight: bold;
+  background-color: inherit;
+  transition: background-color 0.45s ease;
+  box-shadow:
+    -1px -5px 15px #41465b,
+    5px 5px 15px #41465b;
+}
+.addButton:hover {
+  box-shadow:
+    1px 1px 13px #20232e,
+    -1px -1px 13px #545b78;
+  transition: 500ms;
+
+  background-color: #010a2a;
+}
+.addButton:active {
+  transition: 0.1s;
+  box-shadow:
+    1px 1px 13px #20232e,
+    -1px -1px 33px #7c91e0;
+  /*color: #e9e0ee;*/
+}
 
 .task {
-    border: 1px solid lightgoldenrodyellow;
-    padding: 8px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    /*background-color: white;*/
+  border: 1px solid lightgoldenrodyellow;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  word-break: break-word;
+  /*background-color: white;*/
+}
+.lightgreen {
+  background-color: darkgreen;
+  transition: background-color 0.2s ease;
+}
+.darkbrown {
+  background-color: saddlebrown;
+  transition: background-color 0.2s ease;
+}
+.colorless {
+  transition: background-color 0.2s ease;
+  background-color: unset;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid white;*/
 }

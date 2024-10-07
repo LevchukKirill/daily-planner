@@ -6,8 +6,8 @@ import Column from "@/components/drag/Column";
 import styles from "./drag.module.css";
 import task from "@/components/drag/Task";
 
-export default function DragContainer(props: any) {
-  const [data, setData] = useState(props.data);
+export default function DragContainer() {
+  const [data, setData] = useState(initialData);
 
   function onDragStart() {
     document.body.style.transition = "backgroundColor 0.2s ease";
@@ -92,20 +92,12 @@ export default function DragContainer(props: any) {
       onDragUpdate={onDragUpdate}
     >
       <div className={styles.main}>
-        {data.columnOrder?.map((columnId: string) => {
+        {data.columnOrder.map((columnId: string) => {
           const column = data.columns[columnId];
           const tasks = column.taskIds.map(
             (taskId: string) => data.tasks[taskId],
           );
-          return (
-            <Column
-              key={column.id}
-              column={column}
-              tasks={tasks}
-              data={data}
-              setData={(data: any) => setData(data)}
-            />
-          );
+          return <Column key={column.id} column={column} tasks={tasks} />;
         })}
       </div>
     </DragDropContext>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sideNav.module.css";
 
-function SideNav() {
+export default function SideNav() {
   return (
     <div className={styles.nav}>
       <ul>
@@ -12,13 +12,13 @@ function SideNav() {
           <a href="/tasks">Tasks</a>
         </li>
         <li>
-          <a href="/timemanagement">Time Block</a>
+          <a href="/schedule">Time Block</a>
         </li>
         <li>
           <a href="/projects">Projects</a>
         </li>
         <li>
-          <a href="/habits">Habits</a>
+          <a href="/history">History</a>
         </li>
         <li>
           <a href="/settings">Settings</a>
@@ -27,5 +27,3 @@ function SideNav() {
     </div>
   );
 }
-
-export default SideNav;

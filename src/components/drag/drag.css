@@ -1,0 +1,35 @@
+.container {
+  margin: 8px;
+  border: 1px solid lightgoldenrodyellow;
+  border-radius: 10px;
+}
+.title {
+  padding: 8px;
+}
+.taskList {
+  padding: 8px 8px 0px 8px;
+  /*height: 100%;*/
+}
+
+.task {
+  border: 1px solid lightgoldenrodyellow;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  word-break: break-word;
+  /*background-color: white;*/
+}
+.lightgreen {
+  background-color: darkgreen;
+  transition: background-color 0.2s ease;
+}
+.darkbrown {
+  background-color: saddlebrown;
+  transition: background-color 0.2s ease;
+}
+.colorless {
+  transition: background-color 0.2s ease;
+
+  background-color: unset;
+}
